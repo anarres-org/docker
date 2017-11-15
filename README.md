@@ -1,25 +1,21 @@
-Docker
-=========
+# Docker
 
-Install docker.
+Install docker. Not available for arm7, as it still doesn't support
+repositories, follow [this link](https://docs.docker.com/engine/installation/linux/docker-ce/debian/#install-using-the-convenience-script)
 
-Requirements
-------------
-
-None.
-
-Role Variables
---------------
+## Requirements
 
 None.
 
-Dependencies
-------------
+## Role Variables
 
 None.
 
-Example Playbook
-----------------
+## Dependencies
+
+None.
+
+## Example Playbook
 
 ```yaml
 - hosts: servers
@@ -27,18 +23,15 @@ Example Playbook
     - { role: docker }
 ```
 
-Compatible
-----------
+## Compatible
 
 With:
   - Debian 9
 
-License
--------
+## License
 
 GPL3
 
-Author Information
-------------------
+## Author Information
 
 drymer [ EN ] autistici.org
