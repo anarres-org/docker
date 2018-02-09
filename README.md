@@ -5,11 +5,14 @@ repositories, follow [this link](https://docs.docker.com/engine/installation/lin
 
 ## Requirements
 
-None.
+To run this role you must have installed:
+
+* pip
 
 ## Role Variables
 
-None.
+* `install_docker_py`: Set if you want to install the `docker_py` package
+  [Default: `True`]
 
 ## Dependencies
 
@@ -23,10 +26,15 @@ None.
     - { role: docker }
 ```
 
-## Compatible
+## Testing
 
-With:
-  - Debian 9
+To test the role you need [molecule](http://molecule.readthedocs.io/en/latest/).
+
+And vagrant installed with libvirt
+
+```bash
+molecule test
+```
 
 ## License
 
@@ -35,3 +43,4 @@ GPL3
 ## Author Information
 
 drymer [ EN ] autistici.org
+lyz [EN] riseup.net

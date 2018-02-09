@@ -2,22 +2,20 @@
 dependency:
   name: galaxy
 driver:
-  name: docker
+  name: vagrant
+  provider:
+    name: libvirt
 lint:
   name: yamllint
 platforms:
-  - name: geerlingguy_docker_debian9_ansible
-    image: geerlingguy/docker-debian9-ansible
-    privileged: True
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    command: /lib/systemd/systemd
+  - name: docker-debian-stretch64
+    box: debian/stretch64
+    instance_raw_config_args:
+      - "vm.synced_folder '.', '/vagrant', disabled: true"
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
-  options:
-    extra-vars: force_docker=yes
 scenario:
   name: default
 verifier:
