@@ -16,7 +16,7 @@ def test_required_packages_exist(host, package):
 
 
 @pytest.mark.parametrize("pip_package", [
-    ("docker-py"),
+    ("docker"),
 ])
 def test_required_pip_packages_exist(host, pip_package):
     pip_packages = host.pip_package.get_packages()
