@@ -11,7 +11,7 @@ To run this role you must have installed:
 
 ## Role Variables
 
-* `install_docker_py`: Set if you want to install the `docker_py` package
+* `install_docker_pip`: Set if you want to install the `docker` pip package
   [Default: `True`]
 
 ## Dependencies
