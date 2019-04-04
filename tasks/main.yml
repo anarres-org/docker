@@ -29,8 +29,8 @@
     update_cache: yes
     cache_valid_time: 0
 
-- name: Install docker-py
+- name: Install docker pip package
   become: yes
   pip:
-    name: docker-py
-  when: install_docker_py
+    name: docker
+  when: install_docker_pip
