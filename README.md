@@ -11,8 +11,9 @@ To run this role you must have installed:
 
 ## Role Variables
 
-* `install_docker_pip`: Set if you want to install the `docker` pip package
-  [Default: `True`]
+* `install_docker_pip`: (Default: `True`) Set if you want to install the
+   `docker` pip package.
+
 
 ## Dependencies
 
@@ -30,7 +31,7 @@ None.
 
 To test the role you need [molecule](http://molecule.readthedocs.io/en/latest/).
 
-And vagrant installed with libvirt
+And `vagrant` installed with `virtualbox`.
 
 ```bash
 molecule test
@@ -38,9 +39,10 @@ molecule test
 
 ## License
 
-GPL3
+GPLv3
 
 ## Author Information
 
-drymer [ EN ] autistici.org
-lyz [EN] riseup.net
+* drymer: drymer [EN] autistici.org
+* lyz: lyz [EN] riseup.net
+* m0wer: m0wer (at) autistici (dot) org

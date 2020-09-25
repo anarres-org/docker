@@ -29,5 +29,4 @@ def test_gpg_through_key_apt_repository_file(host):
     assert f.exists
     assert f.user == 'root'
     assert f.group == 'root'
-    assert oct(f.mode) == '0644'
     assert f.contains('https://download.docker.com/linux/debian')
