@@ -1,5 +1,13 @@
 ---
 
+- name: "[Pretask] Update apt cache"
+  hosts: all
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 36000
+
 - name: '[Pretask] Install pip'
   hosts: all
   tasks:
