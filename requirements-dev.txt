@@ -149,7 +149,7 @@ pynacl==1.4.0
 pyparsing==2.4.7
     # via packaging
 pytest-testinfra==6.3.0
-    # via testinfra
+    # via -r requirements-dev.in
 pytest==6.2.3
     # via pytest-testinfra
 python-dateutil==2.8.1
@@ -201,8 +201,6 @@ tenacity==7.0.0
     # via ansible-lint
 termcolor==1.1.0
     # via commitizen
-testinfra==6.0.0
-    # via -r requirements-dev.in
 text-unidecode==1.3
     # via python-slugify
 toml==0.10.2
