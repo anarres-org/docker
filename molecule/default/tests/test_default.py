@@ -31,8 +31,11 @@ def test_required_pip_packages_exist(host, pip_package):
 
 
 def test_gpg_through_key_apt_repository_file(host):
-    f = host.file("/etc/apt/sources.list.d/download_docker_com_linux_*.list")
-    assert f.exists
-    assert f.user == "root"
-    assert f.group == "root"
-    assert f.contains("https://download.docker.com/linux/*")
+    fd = host.file("/etc/apt/sources.list.d/download_docker_com_linux_debian.list")
+    fu = host.file("/etc/apt/sources.list.d/download_docker_com_linux_ubuntu.list")
+    assert fd.exists or fu.exists
+    assert fd.user == "root" or fu.user == "root"
+    assert fd.group == "root" or fu.group == "root"
+    assert fd.contains("https://download.docker.com/linux/debian") or fu.contains(
+        "https://download.docker.com/linux/ubuntu"
+    )
