@@ -5,9 +5,11 @@ repositories, follow [this link](https://docs.docker.com/engine/installation/lin
 
 ## Requirements
 
-To run this role you must have installed:
+In your local machine:
 
-* pip
+```bash
+pip install -r requirements.txt
+```
 
 ## Role Variables
 
@@ -17,7 +19,7 @@ To run this role you must have installed:
 
 ## Dependencies
 
-None.
+`sudo` and `python` in the target host(s).
 
 ## Example Playbook
 
@@ -29,13 +31,23 @@ None.
 
 ## Testing
 
-To test the role you need [molecule](http://molecule.readthedocs.io/en/latest/).
-
-And `vagrant` installed with `virtualbox`.
+To test the role you need [molecule](http://molecule.readthedocs.io/en/latest/),
+**vagrant**, **virtualbox** and some python requirements that can be installed wwith
+`pip install -r requirements-dev.txt`.
 
 ```bash
 molecule test
 ```
+
+or
+
+```bash
+make test
+```
+
+There is more documentation about the installation and configuration of the
+required tools at
+[Testing - Anarres documentation](https://anarres-org.github.io/anarres/testing/).
 
 ## License
 
