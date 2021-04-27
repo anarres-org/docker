@@ -23,3 +23,14 @@ v1.0.0 / 2017-11-15
 
   * [feat] add arm support
   * initial commit
+## 1.3.0 (2021-04-27)
+
+### Fix
+
+- update pip package name
+
+### Feat
+
+- **tasks**: support other distributions
+
+## v.1.2.0 (2020-09-25)
