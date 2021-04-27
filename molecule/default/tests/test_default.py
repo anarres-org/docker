@@ -26,7 +26,7 @@ def test_required_packages_exist(host, package):
     ],
 )
 def test_required_pip_packages_exist(host, pip_package):
-    pip_packages = host.pip_package.get_packages(pip_path="pip3")
+    pip_packages = host.pip.get_packages(pip_path="pip3")
     assert pip_package in pip_packages
 
 
