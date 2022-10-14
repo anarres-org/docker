@@ -4,17 +4,17 @@
 #
 #    pip-compile --allow-unsafe requirements-dev.in
 #
-ansible==6.4.0
+ansible==6.5.0
     # via -r requirements.in
 ansible-compat==2.2.1
     # via
     #   ansible-lint
     #   molecule
-ansible-core==2.13.4
+ansible-core==2.13.5
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.8.0
+ansible-lint==6.8.2
     # via -r requirements-dev.in
 argcomplete==2.0.0
     # via commitizen
@@ -66,7 +66,7 @@ decli==0.5.2
     # via commitizen
 distlib==0.3.6
     # via virtualenv
-distro==1.7.0
+distro==1.8.0
     # via selinux
 docker==6.0.0
     # via
