@@ -4,13 +4,13 @@
 #
 #    pip-compile --allow-unsafe requirements-dev.in
 #
-ansible==6.5.0
+ansible==6.6.0
     # via -r requirements.in
 ansible-compat==2.2.4
     # via
     #   ansible-lint
     #   molecule
-ansible-core==2.13.5
+ansible-core==2.13.6
     # via
     #   ansible
     #   ansible-lint
@@ -125,7 +125,7 @@ pathspec==0.10.1
     # via
     #   black
     #   yamllint
-platformdirs==2.5.2
+platformdirs==2.5.3
     # via
     #   black
     #   virtualenv
@@ -217,7 +217,7 @@ yamllint==1.28.0
     #   ansible-lint
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==65.5.0
+setuptools==65.5.1
     # via
     #   nodeenv
     #   selinux
