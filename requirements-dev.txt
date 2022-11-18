@@ -6,7 +6,7 @@
 #
 ansible==6.6.0
     # via -r requirements.in
-ansible-compat==2.2.4
+ansible-compat==2.2.5
     # via
     #   ansible-lint
     #   molecule
@@ -121,11 +121,11 @@ packaging==21.3
     #   docker
     #   molecule
     #   pytest
-pathspec==0.10.1
+pathspec==0.10.2
     # via
     #   black
     #   yamllint
-platformdirs==2.5.3
+platformdirs==2.5.4
     # via
     #   black
     #   virtualenv
@@ -203,7 +203,7 @@ urllib3==1.26.12
     # via
     #   docker
     #   requests
-virtualenv==20.16.6
+virtualenv==20.16.7
     # via pre-commit
 wcmatch==8.4.1
     # via ansible-lint
