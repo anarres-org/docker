@@ -78,11 +78,11 @@ filelock==3.9.0
     #   virtualenv
 flake8==6.0.0
     # via -r requirements-dev.in
-identify==2.5.12
+identify==2.5.13
     # via pre-commit
 idna==3.4
     # via requests
-iniconfig==1.1.1
+iniconfig==2.0.0
     # via pytest
 jinja2==3.1.2
     # via
@@ -112,7 +112,7 @@ mypy-extensions==0.4.3
     # via black
 nodeenv==1.7.0
     # via pre-commit
-packaging==22.0
+packaging==23.0
     # via
     #   ansible-compat
     #   ansible-core
@@ -167,14 +167,14 @@ pyyaml==6.0
     #   yamllint
 questionary==1.10.0
     # via commitizen
-requests==2.28.1
+requests==2.28.2
     # via
     #   cookiecutter
     #   docker
     #   molecule-docker
 resolvelib==0.8.1
     # via ansible-core
-rich==13.0.0
+rich==13.0.1
     # via
     #   ansible-lint
     #   enrich
@@ -183,7 +183,7 @@ ruamel-yaml==0.17.21
     # via ansible-lint
 selinux==0.3.0
     # via molecule-docker
-setuptools==65.6.3
+setuptools==65.7.0
     # via
     #   nodeenv
     #   yamllint
@@ -199,7 +199,7 @@ tomlkit==0.11.6
     # via commitizen
 typing-extensions==4.4.0
     # via commitizen
-urllib3==1.26.13
+urllib3==1.26.14
     # via
     #   docker
     #   requests
@@ -211,7 +211,7 @@ wcwidth==0.2.5
     # via prompt-toolkit
 websocket-client==1.4.2
     # via docker
-yamllint==1.28.0
+yamllint==1.29.0
     # via
     #   -r requirements-dev.in
     #   ansible-lint
