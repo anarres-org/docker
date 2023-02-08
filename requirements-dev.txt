@@ -56,7 +56,7 @@ commitizen==2.40.0
     # via -r requirements-dev.in
 cookiecutter==2.1.1
     # via molecule
-cryptography==39.0.0
+cryptography==39.0.1
     # via ansible-core
 decli==0.5.2
     # via commitizen
@@ -185,10 +185,6 @@ ruamel-yaml==0.17.21
     # via ansible-lint
 selinux==0.3.0
     # via molecule-docker
-setuptools==66.1.1
-    # via
-    #   nodeenv
-    #   yamllint
 six==1.16.0
     # via python-dateutil
 subprocess-tee==0.4.1
