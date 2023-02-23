@@ -96,7 +96,7 @@ jsonschema==4.17.3
     #   ansible-compat
     #   ansible-lint
     #   molecule
-markdown-it-py==2.1.0
+markdown-it-py==2.2.0
     # via rich
 markupsafe==2.1.2
     # via jinja2
@@ -185,10 +185,6 @@ ruamel-yaml==0.17.21
     # via ansible-lint
 selinux==0.3.0
     # via molecule-docker
-setuptools==66.1.1
-    # via
-    #   nodeenv
-    #   yamllint
 six==1.16.0
     # via python-dateutil
 subprocess-tee==0.4.1
